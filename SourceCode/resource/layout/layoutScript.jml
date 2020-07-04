@@ -1,0 +1,201 @@
+<!DOCTYPE JML>
+CharSet = "GBK2312";
+</DOCTYPE JML>
+
+
+
+<Sound>
+	ratio_origin = 0,0;
+	ratio_border = 0,0;
+</Sound>
+
+//标题栏
+<rectangle>
+
+	ratio_origin = 0,0;
+	ratio_border = 1,0.02;
+
+	FillColor = 50,50,50;
+
+	<BitMap>
+		ratio_origin = 0.005,0.1;
+		ratio_border = 0.014,0.9;
+		//BitMapAddress = "D:\\VSproject\\GraphicInterface\\resource\\image\\Ico\\SOULFLAW.jpg";
+	</BitMap>
+	<Buttom>
+		ratio_origin = 0.05,0.1;
+		ratio_border = 0.1,0.9;
+		ButtomName = "文件";
+		ShowBorder = 0;
+	</Buttom>
+	<Buttom>
+		ratio_origin = 0.1,0.1;
+		ratio_border = 0.15,0.9;
+		ButtomName = "搜索";
+		ShowBorder = 0;
+	</Buttom>
+	<Buttom>
+		ratio_origin = 0.15,0.1;
+		ratio_border = 0.2,0.9;
+		ButtomName = "视图";
+		ShowBorder = 0;
+	</Buttom>
+
+	<Buttom>
+		ratio_origin = 0.2,0.1;
+		ratio_border = 0.25,0.9;
+		ButtomName = "语言";
+		ShowBorder = 0;
+	</Buttom>
+	<Buttom>
+		ratio_origin = 0.25,0.1;
+		ratio_border = 0.3,0.9;
+		ButtomName = "设置";
+		ShowBorder = 0;
+	</Buttom>
+	<Buttom>
+		ratio_origin = 0.3,0.1;
+		ratio_border = 0.35,0.9;
+		ButtomName = "编码";
+		ShowBorder = 0;
+	</Buttom>
+	
+	<Buttom>
+		ratio_origin = 0.950,0;
+		ratio_border = 0.961,0.9;
+		ButtomName = "-";
+		ShowBorder = 0;
+	</Buttom>
+	
+	<Buttom>
+		ratio_origin = 0.969,0;
+		ratio_border = 0.980,0.9;
+		ButtomName = "+";
+		ShowBorder = 0;
+	</Buttom>
+	
+	<Buttom>
+		ratio_origin = 0.988,0;
+		ratio_border = 0.999,0.9;
+		ButtomName = "*";
+		ShowBorder = 0;
+	</Buttom>
+</rectangle>
+
+//菜单栏
+<rectangle>
+	ratio_origin = 0,0.02;
+	ratio_border = 1,0.05;
+
+	FillColor = 100,100,100;
+
+</rectangle>
+
+//工具栏
+<rectangle>
+	ratio_origin = 0,0.05;
+	ratio_border = 1,0.1;
+
+	FillColor = 120,120,120;
+</rectangle>
+
+//节点库
+<rectangle>
+	ratio_origin = 0,0.1;
+	ratio_border = 0.2,0.9;
+
+	FillColor = 80,80,80;
+
+	//库列表
+	<rectangle>
+		ratio_origin = 0,0;
+		ratio_border = 0.97,1;
+
+		FillColor = 40,40,40;
+
+		
+		<Rectangle>
+			ratio_origin = 0,0.4;
+			ratio_border = 0,0.6;
+		
+		</Rectangle>
+	</rectangle>
+	//滑轨
+	<Slider>
+		ratio_origin = 0.97,0;
+		ratio_border = 1,1;
+
+		FillColor = 25,25,25;
+		MaxMin = 100,0;
+		RockerValue = 50;
+		//>ForwordButton<
+		//... = ... ;
+		//... = ... ;
+		//>/ForwordButton<
+	</Slider>
+</rectangle>
+
+//主视窗
+<rectangle>
+	ratio_origin = 0.2,0.1;
+	ratio_border = 0.8,0.9;
+
+	FillColor = 0,0,0;
+
+	<BitMap>
+		ratio_origin = 0,0;
+		ratio_border = 0.99,0.987;
+
+		FillColor = 0,0,0;
+		//ShowBorder = 1;
+		BitMapAddress = "resource\\image\\Picture\\img10.jpg";
+	</BitMap>
+		//滑轨
+	<Slider>
+		ratio_origin = 0,0.987;
+		ratio_border = 0.99,1;
+
+		FillColor = 25,25,25;
+	</Slider>
+		//滑轨
+	<Slider>
+		ratio_origin = 0.99,0;
+		ratio_border = 1,0.987;
+
+		FillColor = 25,25,25;
+	</Slider>
+</rectangle>
+
+//属性栏
+<rectangle>
+
+	ratio_origin = 0.8,0.1;
+	ratio_border = 1,0.9;
+
+	FillColor = 80,80,80;
+<rectangle>
+		ratio_origin = 0,0;
+		ratio_border = 0.97,1;
+
+		FillColor = 40,40,40;
+		
+		CutX = 5;
+		CutY = 5;
+	</rectangle>
+	<Slider>
+		ratio_origin = 0.97,0;
+		ratio_border = 1,1;
+		
+		FillColor = 25,25,25;
+		//Max_Min = 50;250;
+		//RokerValue = 0;
+	</Slider>
+</rectangle>
+
+//状态栏
+<rectangle>
+	ratio_origin = 0,0.9;
+	ratio_border = 1,1;
+
+	FillColor = 50,50,50;
+</rectangle>
